@@ -1,0 +1,27 @@
+camera:
+  fovy_range: [0.55, 0.60]
+  radius_range: [2.0, 2.2]
+  theta_range: [85, 95]
+  phi_range: [-180, 180]
+  default_fov: 0.55
+  default_polar: 90
+  default_radius: 2.0
+  default_azimuth: 0
+  center: [0,0,0]
+  image_h: 2048
+  image_w: 2048
+  SSAA: 1
+  num_views_train: 8
+  num_views_test: 24
+  num_views_filter: 8
+  filter_render_h: 1024
+  filter_render_w: 1024
+
+train:
+  lr: 0.3
+  edge_len_lims: [0.005, 0.1]
+  C_batch_size: 8
+  total_iters: 1000
+  image_save_interval: 200
+  subdivision: 1
+  do_recon: false
